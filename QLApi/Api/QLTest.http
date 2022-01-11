@@ -1,0 +1,32 @@
+﻿###
+POST http://localhost:5288/graphql
+Content-Type: application/json
+
+{
+  "query": "query { provinces { list { name, id, communes { districtName, citys { name } } } } }"
+}
+
+###
+POST http://localhost:5288/graphql
+Content-Type: application/json
+
+{
+  "query": "query { provinces { province(id: \"20DC3C95-CED4-45C1-9542-50E3611FBCCF\") { name, id, communes { districtName, citys { name } } } } }"
+}
+
+
+###
+POST http://localhost:5288/graphql
+Content-Type: application/json
+
+{
+  "query": "query { airHistory { list { stationId, updateDate, airTests { so2IndexLevel } } } }"
+}
+
+###
+POST http://localhost:5288/graphql
+Content-Type: application/json
+
+{
+  "query": "query { airHistory { station(id: 584) { updateDate, airTests { so2IndexLevel } } } }"
+}
