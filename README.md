@@ -1,5 +1,4 @@
-I wrote **QLApi** to learn myself with an interesting solution which is **GraphQL**.
-seems to be an interesting alternative to **REST**.
+I wrote this **QLApi** tutorial for the github community, **GraphQL** is an interesting solution. It seems to be a good alternative to **REST**.
 
 
 ## Architecture

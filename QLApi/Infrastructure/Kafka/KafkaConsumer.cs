@@ -21,7 +21,7 @@ public class KafkaConsumer : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        Console.WriteLine($" --- >>>> start kafka consumer");
+        Console.WriteLine($"**** [Start Kafka Consumer] ****");
         await Task.Run(() => StartConsumer(stoppingToken), stoppingToken);
     }
 
